@@ -25,7 +25,7 @@ nav { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
 <main>
 <nav><a href="index.html">Alandar</a> · <a href="privacidad.html">Privacidad</a> · <a href="condiciones.html">Condiciones</a> · <a href="borrar-cuenta.html">Borrar la cuenta</a></nav>
 <h1>Política de privacidad de Alandar</h1>
-<p>Última actualización: 17 de octubre de 2026. Versión 1.</p>
+<p>Última actualización: 19 de octubre de 2026. Versión 2.</p>
 <p>Esta política explica qué datos personales trata Alandar, para qué, con qué base legal, con quién
 se comparten, cuánto tiempo se conservan y cómo puedes ejercer tus derechos. Se aplica a la app
 Alandar para Android y a esta web. La hemos escrito para que se entienda sin ser jurista;
@@ -292,8 +292,9 @@ revocables en cualquier momento:</p>
    lo que apuntas en ella (comidas, peso, entrenos), cada llamada a la IA con su petición y su
    respuesta, y los fallos (sección 2.6), para encontrar y arreglar fallos y mejorar la app. Sin él
    no sale nada de esto de tu teléfono. La casilla dice: «Compartir con Alandar cómo uso la app, lo
-   que apunto en ella (comidas, peso, entrenos) y los datos de salud que mando a la IA, para
-   encontrar y arreglar fallos y mejorar la app. Puedo quitarlo en mi Perfil.»</li>
+   que apunto en ella (comidas, peso, entrenos) y todo lo que la app manda a la IA, también mis
+   datos de salud (embarazo, alimentación, enfermedades y alergias), para encontrar y arreglar
+   fallos y mejorar la app. Puedo quitarlo en mi Perfil.»</li>
 </ol>
 <p>Además, al empezar aceptas las condiciones de uso y confirmas que has leído esta política. Eso no
 equivale a ninguno de los tres consentimientos anteriores.</p>
@@ -348,13 +349,13 @@ identificador de tu cuenta:</p>
 <tbody>
 <tr>
 <td>Uso</td>
-<td>Qué haces en la app y cuándo: las pantallas que abres; lo que apuntas (una comida con su descripción y sus calorías, un peso, un entreno o un producto de tu despensa) y lo que sale de la despensa o vuelve a ella al apuntar, cambiar o borrar una comida; las propuestas del coach que confirmas o descartas, con el motivo si las descartas; los permisos que das; las copias (también cuando dejas una preparada para recuperarla), las compras y el uso de tu cuenta de Google. Con la versión de la app</td>
+<td>Qué haces en la app y cuándo: las pantallas que abres; lo que apuntas (una comida con su descripción y sus calorías, un peso, un entreno o un producto de tu despensa) y lo que sale de la despensa o vuelve a ella al apuntar, cambiar o borrar una comida; las propuestas del coach que confirmas o descartas, con el motivo si las descartas; el tema de cada pregunta al coach (por ejemplo, «comida» o «entreno»), sin su texto; los permisos que das; las copias (también cuando dejas una preparada para recuperarla), las compras y el uso de tu cuenta de Google. Con la versión de la app</td>
 <td>180 días</td>
 </tr>
 <tr>
 <td>Llamadas a la IA</td>
-<td>Por cada llamada: el tipo, la hora, cuánto tardó, si salió bien o el error, la petición que la app mandó (tu mensaje, la conversación reciente y los datos que la app añade para esa función, sin fotos ni audio) y la respuesta que recibió. Las instrucciones fijas de Alandar a la IA, que es donde la app añade tu perfil y el resumen de lo que sabe de ti, no se guardan: solo una huella (un código y su longitud) para saber qué versión se usó</td>
-<td>14 días</td>
+<td>Por cada llamada: el tipo, la hora, cuánto tardó, si salió bien o el error, la petición que la app mandó y la respuesta que recibió, sin fotos ni audio. La petición lleva tu mensaje, la conversación de hoy, las consultas que la IA hizo a tu historial con sus resultados y todo lo que la app añade para esa función: tu perfil (también tus respuestas sobre embarazo, lactancia, trastornos de la conducta alimentaria, enfermedades y alergias), lo que el coach sabe de ti y su plan, la conversación de los días anteriores, tu despensa, tus comidas, entrenos y datos de salud del día. De las instrucciones fijas del coach, que son iguales para todo el mundo, solo se guarda una huella (un código y su longitud) para saber qué versión se usó; las de leer una foto, un ticket o una etiqueta se guardan enteras. Si diste el permiso con su versión anterior y no has aceptado su ampliación, de las instrucciones que la app le da a la IA (tu perfil, lo que el coach sabe de ti, su plan, tu despensa y los datos del día) solo se guarda una huella; tu mensaje, la conversación de hoy y las consultas a tu historial con sus resultados sí se guardan, como hasta ahora</td>
+<td>90 días; 14 si no has aceptado la ampliación</td>
 </tr>
 <tr>
 <td>Fallos</td>
@@ -364,14 +365,20 @@ identificador de tu cuenta:</p>
 </tbody>
 </table>
 <ul>
+<li><strong>Cifras sin datos personales.</strong> Cada noche, el servidor resume el día anterior en cifras que no
+  permiten saber de quién son: cuántas llamadas a la IA hubo de cada tipo y cuánto tardaron, qué
+  consultas a tu historial pidió la IA, de qué temas se preguntó y cuántas veces se usó cada
+  función. Solo se guarda una cifra si reúne al menos 5 cuentas distintas ese día; si no, no se
+  guarda. Esas cifras se guardan sin plazo, para comparar la app a lo largo del tiempo.</li>
 <li><strong>Quién lo ve.</strong> El detalle (qué hizo una cuenta, las llamadas a la IA y, si has entrado con
   Google, tu correo junto a esos datos) solo lo mira el responsable, desde el panel de
   administración, para encontrar y arreglar fallos y mejorar la app (por ejemplo, ver qué hizo una
   cuenta justo antes de fallar y qué respondió la IA). Un asistente de IA que le ayuda con el
-  soporte solo ve recuentos y tipos de fallo, sin correos, peticiones ni respuestas. Es un
-  compromiso de conducta, como el de la copia (sección 2.5), reforzado por una guarda en la
-  herramienta de consulta (en producción solo da recuentos, y el detalle pide una confirmación
-  escrita), no una garantía técnica: quien administra el servidor podría saltársela. La app solo
+  soporte solo ve cifras sin datos personales (recuentos, tiempos de respuesta, temas y tipos de
+  fallo, siempre de al menos 5 cuentas), sin correos, peticiones ni respuestas. Es un compromiso de conducta, como el de la copia
+  (sección 2.5), reforzado por una guarda en la herramienta de consulta (en producción da cifras, y
+  el detalle de una cuenta pide una confirmación escrita), no una garantía técnica: quien
+  administra el servidor podría saltársela. La app solo
   puede enviar este registro: la base de datos no le deja volver a leerlo. No lo compartimos con
   nadie ni lo usamos para entrenar modelos ni para publicidad.</li>
 <li><strong>Dónde.</strong> En la base de datos de Supabase, en la Unión Europea (Fráncfort).</li>
@@ -522,8 +529,9 @@ la versión de Android, si activas el registro de uso y diagnósticos).</p>
   Google puede guardar esa petición hasta 90 días, en la Unión Europea, solo para comprobarlo, y
   personal autorizado de Google puede revisarla. No la usa para nada más.</li>
 <li><strong>Registro opcional de las llamadas.</strong> Si activas el registro de uso y diagnósticos, guardamos en
-  nuestro servidor, durante 14 días, la petición y la respuesta de cada llamada a la IA, sin fotos
-  ni audio (sección 2.6). Esa copia es nuestra, no de Google, y solo existe si tú la activas.</li>
+  nuestro servidor, durante 90 días, la petición entera (con todo lo que la app añade) y la
+  respuesta de cada llamada a la IA, sin fotos ni audio (sección 2.6; con la versión anterior del
+  permiso, sin lo que añade la app y 14 días). Esa copia es nuestra, no de Google, y solo existe si tú la activas.</li>
 <li><strong>Filtros de seguridad.</strong> Usamos los filtros de seguridad de Google sin rebajarlos y límites
   propios en las instrucciones del coach. Puedes reportar cualquier respuesta desde la propia app.</li>
 <li><strong>Puede equivocarse.</strong> No es un profesional sanitario ni sustituye a uno. Más detalles en las
@@ -615,8 +623,9 @@ quieras en los ajustes de Health Connect.</p>
 <li>Solo si das tu consentimiento para el análisis con IA, se envían resumidos al servicio de IA, y
   solo lo necesario para cada respuesta (sección 2.3). Nuestro servidor no los guarda y Google solo
   conserva lo que sus filtros marquen como posible abuso (sección 4). Si además activas el registro
-  de uso y diagnósticos, lo que viaja en esas peticiones, salvo las instrucciones fijas de Alandar,
-  queda en nuestro registro 14 días (sección 2.6).</li>
+  de uso y diagnósticos, lo que viaja en esas peticiones, salvo las instrucciones fijas del coach,
+  queda en nuestro registro 90 días (con la versión anterior del permiso, sin lo que añade la app
+  y 14 días; sección 2.6).</li>
 <li><strong>Uso limitado.</strong> El uso que Alandar hace de los datos de Health Connect cumple la política de
   permisos de Health Connect de Google Play, incluidos sus requisitos de uso limitado:</li>
 <li>los usamos solo para prestar y mejorar las funciones que ves en la app;</li>
@@ -776,7 +785,11 @@ pedirnos una copia de estas garantías en luis.sotoarce10@gmail.com.</p>
 </tr>
 <tr>
 <td>Llamadas a la IA en el registro (opcional)</td>
-<td>14 días. Se borran antes si retiras el permiso o borras la cuenta</td>
+<td>90 días (14 si diste el permiso con su versión anterior y no has aceptado su ampliación). Se borran antes si retiras el permiso o borras la cuenta</td>
+</tr>
+<tr>
+<td>Cifras diarias del registro (sin datos personales)</td>
+<td>Sin plazo: cada una reúne al menos 5 cuentas y no permite saber de quién es</td>
 </tr>
 <tr>
 <td>Copia en la nube (opcional)</td>
